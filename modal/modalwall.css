@@ -1,0 +1,107 @@
+html , body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+html{
+    background-image: url(mountain-3022908__480.jpg);
+    background-size: cover;
+    font-size: 30px;
+    background-position: center center;
+}
+.button{
+    font-size: 22px;
+    text-align: center;
+    line-height: 44px;
+    background-color: #cc4331;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 25px 5px 25px;
+    box-shadow: 0 4px 0 #af3a2a, 0 5px 5px 1px rgba(0,0,0,0.2);
+    transition: all 0.15s ease-in-out;
+    margin-top: -4px;
+    
+}
+.button:hover{
+    background-color: #d25544;
+    box-shadow: 0 4px 0 #c4402f;
+}
+.button:active{
+    margin-top: 0px;
+    box-shadow: none;
+}
+.button--close{
+    background-color: rgb(33, 104, 104);
+    box-shadow: 0 4px 0 rgb(67, 184, 184), 0 5px 5px 1px rgba(0,0,0,0.2);
+}
+.button--close:hover{
+        background-color: rgb(33, 104, 104);
+        box-shadow: 0 4px 0 rgb(67, 184, 184);
+    
+}
+.button--accept{
+    background-color: rgb(17, 96, 234);
+    box-shadow: 0 4px 0 rgb(111, 166, 239), 0 5px 5px 1px rgba(0,0,0,0.2);
+    animation-name: submit;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.button--accept:hover{
+        background-color: rgb(17, 96, 234);
+        box-shadow: 0 4px 0 rgb(111, 166, 239);    
+}
+@keyframes submit{
+    0%{
+        background-color: rgb(17, 96, 234);
+    }
+    25%{
+        background-color: red;
+    }
+    50%{
+        background-color: blueviolet;
+    }
+    100%{
+        background-color: darkorange;
+        border-radius: 50%;
+    }
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#modal-background{
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.4);
+    height: 100%;
+    z-index: -10;
+    opacity: 0; 
+    transition: 500ms ease-in-out;
+}
+#modal-background.active{
+    z-index: 10;
+    opacity: 1;
+}
+#modal-box{
+    background-color: aliceblue;
+    position: fixed;
+    padding: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 4px;
+    opacity: 0;
+    z-index: -10;
+    transition: 500ms ease-in-out;
+}
+#modal-box.active{
+    z-index: 10;
+    opacity: 1;
+}
+.text-right{
+    text-align: right;
+}

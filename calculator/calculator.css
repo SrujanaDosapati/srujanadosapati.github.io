@@ -1,0 +1,62 @@
+html, body{
+    height: 100%;
+}
+body{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+background: #7d7e7d; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.calculator{
+    background-color: #353535;
+    width: 300px;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.result{
+    background-color: rgb(197, 197, 140);
+    padding: 10px;
+    margin: 4px;
+    border-radius: 4px;
+    height: 20px;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    list-style: none;
+    width: 15%;
+    padding: 10px;
+    float: left;
+    margin: 5px;
+    color: white;
+    cursor: pointer;
+    background: #4e4e4e;
+    border-radius: 4px;
+    margin: 5px;
+    text-align: center;
+    box-shadow: 0 5px 0 #a5a5a5;
+}
+ul li:hover{
+    background-color: #e3d6d6;
+}
+
+ul li:active{
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}
+ul li:last-child{
+    width: 65%;
+    margin-top: -45px;
+}
+ul li:nth-child(16){
+    height: 75px;
+    line-height: 75px;
+}
